@@ -1,4 +1,4 @@
- {% extends 'layout.html' %}
+{% extends 'layout.html' %}
 
 
 
@@ -41,6 +41,22 @@
 
     </div>
 
+    <div style="margin-left: 2rem; margin-right: 70rem ">
+      <br>
+      <br>
+      <br>  
+      <form action="{{url_for('index')}}" method="post" >
+    
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="add tasks here" name='inputmg' >
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary" type="submit">add</button>
+            </div>
+          </div>
+    
+        </form>
+      </div>
+    
 
 
 
