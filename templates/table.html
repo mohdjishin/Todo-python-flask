@@ -20,15 +20,21 @@
     
           </tr>
         </thead>
+       {% if data %}
+        
+        {%for d in data %}
+
         <tbody>
           <tr>
-            <th scope="row" ></th>
-            <td style="text-align: right;"><button type="button" class="btn btn-success">Done</button></td>
+            <th scope="row" >{{d.msg}}</th>
+            <td style="text-align: right;"><a href="/done/{{d.id}}"><button type="button" class="btn btn-success">Done</button></a></td>
             <td style="text-align: left;"><button type="button" class="btn btn-info">Update</button></td>
             
           </tr>
           
         </tbody>
+        {% endfor %}
+        {% endif %}
       </table>
 
 
