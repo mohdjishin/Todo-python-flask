@@ -1,0 +1,4 @@
+CREATE TABLE `todo`.`list` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `msg` VARCHAR(100) NULL,
+  PRIMARY KEY (`id`));
