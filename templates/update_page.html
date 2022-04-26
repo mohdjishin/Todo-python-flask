@@ -1,0 +1,27 @@
+{% extends 'layout.html'%}
+
+
+{%block content%}
+
+{% if result %}
+
+</div>
+
+<div style="margin-left: 2rem; margin-right: 70rem ">
+  <br>
+  <br>
+  <br>  
+  <form action="/update/{{result.id}}" method="post" >
+
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="add tasks here" name='inputmg' value="{{result.msg}}" >
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" type="submit">Update</button>
+        </div>
+      </div>
+
+    </form>
+  </div>
+
+{%endif%}
+  {% endblock %}
